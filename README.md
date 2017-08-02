@@ -6,7 +6,7 @@ Great, we'd love to see your coding abilities and style inside this project. Thi
 Tasks
 -----
 
-* Fix the app so the tests dont fail
+* [Done] Fix the app so the tests dont fail
 * Create an admin screen for Cars (Using ActiveAdmin, see app/admin/)
 * Make it so a user can have many cars associated with them
 * Add a year field so I can own a car from 2003, or maybe any year?
