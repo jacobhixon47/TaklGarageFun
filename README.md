@@ -9,9 +9,9 @@ Tasks
 * [Done] Fix the app so the tests dont fail
 * [Done] Create an admin screen for Cars (Using ActiveAdmin, see app/admin/)
 * [Done] Make it so a user can have many cars associated with them
-* Add a year field so I can own a car from 2003, or maybe any year?
-* Add a Garage model that I can store my cars in
-* Make the Garage have a configurable number of spaces and enforce that I can't store too many cars in there.
+* [Done] Add a year field so I can own a car from 2003, or maybe any year?
+* [Done] Add a Garage model that I can store my cars in
+* [Done] Make the Garage have a configurable number of spaces and enforce that I can't store too many cars in there.
 * Make sure you have Admin UIs for the major models so I can, as an admin create, read, update and destroy cars, garages, manufacturers, etc...
 
 Tips
