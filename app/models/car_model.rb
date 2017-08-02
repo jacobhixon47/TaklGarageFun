@@ -1,5 +1,5 @@
 class CarModel < ApplicationRecord
-  validates_presence_of :name
+  validates :name, presence: true
   belongs_to :manufacturer, required: true
   has_many :cars
 end

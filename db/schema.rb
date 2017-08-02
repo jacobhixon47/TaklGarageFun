@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170511135624) do
+ActiveRecord::Schema.define(version: 20170802022034) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -35,13 +35,17 @@ ActiveRecord::Schema.define(version: 20170511135624) do
   end
 
   create_table "cars", force: :cascade do |t|
-    t.integer  "car_model_id",             null: false
-    t.string   "vin",                      null: false
-    t.integer  "mileage",      default: 0, null: false
+    t.integer  "car_model_id",                null: false
+    t.string   "vin",                         null: false
+    t.integer  "mileage",         default: 0, null: false
     t.string   "color"
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+    t.integer  "user_id"
+    t.integer  "manufacturer_id"
     t.index ["car_model_id"], name: "index_cars_on_car_model_id"
+    t.index ["manufacturer_id"], name: "index_cars_on_manufacturer_id"
+    t.index ["user_id"], name: "index_cars_on_user_id"
   end
 
   create_table "manufacturers", force: :cascade do |t|

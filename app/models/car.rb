@@ -1,5 +1,6 @@
 class Car < ApplicationRecord
+  belongs_to :user
   belongs_to :car_model, required: true
-  has_one :manufacturer, through: :car_model
+  belongs_to :manufacturer, required: true
   validates :vin, presence: true
 end
