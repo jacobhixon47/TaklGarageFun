@@ -1,7 +1,6 @@
 ActiveAdmin.register Garage do
   permit_params :name, :limit, :full
   before_update do |garage|
-    session[:return_to] ||= request.referer
     if garage.cars.count == garage.limit
       garage.update(full: true)
     elsif garage.cars.count <= garage.limit
