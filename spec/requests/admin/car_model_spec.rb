@@ -21,7 +21,7 @@ describe CarModel, type: :feature do
   describe 'Index page' do
     let(:path) { admin_car_models_path }
     it 'displays the name' do
-      FactoryGirl.create(:car_model)
+      car_model
       subject
       expect(page).to have_content car_model.name
     end

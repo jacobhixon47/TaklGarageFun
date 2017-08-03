@@ -17,7 +17,7 @@ describe Manufacturer, type: :feature do
     let(:path) { admin_manufacturers_path }
 
     it 'displays the name' do
-      FactoryGirl.create(:manufacturer)
+      manufacturer
       subject
       expect(page).to have_content manufacturer.name
     end
