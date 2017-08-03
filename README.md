@@ -1,7 +1,8 @@
 Takl Car Garage
 ===============
 
-Great, we'd love to see your coding abilities and style inside this project. This is supposed to be a project so users can manage their copious number of cars. So we have some tasks for you to flesh out in the project. First you should fork this repo.
+It is best to create a Garage first, then Manufacturer(s), then a Model(s), then Car(s). That way you can associate the car with manufacturer, model, garage, etc.
+
 
 Tasks
 -----
