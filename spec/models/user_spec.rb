@@ -1,7 +1,6 @@
 describe User do
-  subject { users(:test) }
+  subject { FactoryGirl.create(:user) }
 
-  it { should be_valid }
   it { should respond_to(:email) }
   it { should respond_to(:password) }
 end

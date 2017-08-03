@@ -1,7 +1,6 @@
 describe CarModel, type: :model do
-  subject { car_models(:f150) }
-
-  it { should be_valid }
+  subject {FactoryGirl.create(:car_model)}
+  
   it { should respond_to(:manufacturer) }
   it { should respond_to(:cars) }
   it { should respond_to(:name) }

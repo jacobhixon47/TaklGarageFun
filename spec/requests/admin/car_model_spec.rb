@@ -1,7 +1,7 @@
 describe CarModel, type: :feature do
-  with_authentication { users(:test) }
+  with_authentication { FactoryGirl.create(:user) }
 
-  let(:car_model) { car_models(:f150) }
+  let(:car_model) { FactoryGirl.create(:car_model) }
   let(:subject) { visit path }
 
   describe 'Show page' do
@@ -20,8 +20,8 @@ describe CarModel, type: :feature do
 
   describe 'Index page' do
     let(:path) { admin_car_models_path }
-
     it 'displays the name' do
+      FactoryGirl.create(:car_model)
       subject
       expect(page).to have_content car_model.name
     end

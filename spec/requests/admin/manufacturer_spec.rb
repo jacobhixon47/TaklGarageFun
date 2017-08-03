@@ -1,7 +1,7 @@
 describe Manufacturer, type: :feature do
-  with_authentication { users(:test) }
+  with_authentication { FactoryGirl.create(:user) }
 
-  let(:manufacturer) { manufacturers(:ford) }
+  let(:manufacturer) { FactoryGirl.create(:manufacturer) }
   let(:subject) { visit path }
 
   describe 'Show page' do
@@ -17,6 +17,7 @@ describe Manufacturer, type: :feature do
     let(:path) { admin_manufacturers_path }
 
     it 'displays the name' do
+      FactoryGirl.create(:manufacturer)
       subject
       expect(page).to have_content manufacturer.name
     end

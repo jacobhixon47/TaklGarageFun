@@ -12,7 +12,7 @@ Tasks
 * [Done] Add a year field so I can own a car from 2003, or maybe any year?
 * [Done] Add a Garage model that I can store my cars in
 * [Done] Make the Garage have a configurable number of spaces and enforce that I can't store too many cars in there.
-* Make sure you have Admin UIs for the major models so I can, as an admin create, read, update and destroy cars, garages, manufacturers, etc...
+* [Done] Make sure you have Admin UIs for the major models so I can, as an admin create, read, update and destroy cars, garages, manufacturers, etc...
 
 Tips
 ----

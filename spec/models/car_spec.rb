@@ -1,12 +1,13 @@
 describe Car, type: :model do
-  subject { cars(:red_f150) }
 
-  it { should be_valid }
+  subject { FactoryGirl.create(:car) }
+
   it { should respond_to(:manufacturer) }
   it { should respond_to(:car_model) }
   it { should respond_to(:color) }
   it { should respond_to(:vin) }
   it { should respond_to(:mileage) }
+    it { should respond_to(:garage) }
 
   it 'requires vin to be valid' do
     subject.vin = nil
