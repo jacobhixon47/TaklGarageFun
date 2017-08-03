@@ -14,7 +14,7 @@ describe CarModel, type: :feature do
 
     it 'displays the manufacturer' do
       subject
-      expect(page).to have_content car_model.name
+      expect(page).to have_content car_model.manufacturer.name
     end
   end
 
@@ -24,6 +24,11 @@ describe CarModel, type: :feature do
       car_model
       subject
       expect(page).to have_content car_model.name
+    end
+    it 'displays the manufacturer' do
+      car_model
+      subject
+      expect(page).to have_content car_model.manufacturer.name
     end
   end
 end

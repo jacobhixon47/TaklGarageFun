@@ -4,6 +4,8 @@ FactoryGirl.define do
     association :manufacturer, factory: :manufacturer
     color 'Red'
     vin '12345ABCDEF67890G'
+    year 2007
+    mileage 123456
     association :user, factory: :user
     association :garage, factory: :garage
   end

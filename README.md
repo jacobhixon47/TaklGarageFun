@@ -18,6 +18,10 @@ Tips
 ----
 
 We like automated tests at Takl, so you should use those. There are some examples in this repo, most work fine.
+
+[Done: Added many more tests, converted to FactoryGirl, added SimpleCov]
+[Currently tests show coverage at ~88.56%]
+
 Don't feel like you must obey whats already in place, if you think theres a better way, go for it.
 
 Order you do these tasks in doesn't matter, that's up to you.
